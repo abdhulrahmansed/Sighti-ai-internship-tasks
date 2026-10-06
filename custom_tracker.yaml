@@ -1,0 +1,10 @@
+tracker_type: botsort
+track_high_thresh: 0.25      # Lower threshold to detect dark clothing
+track_low_thresh: 0.10       # Keeps track alive even during heavy glare/shadows
+new_track_thresh: 0.35
+track_buffer: 60             # Keep tracking memory for 60 frames if lost
+match_thresh: 0.70
+gmc_method: sparseOptFlow
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+with_reid: True              # Extract appearance features for dark clothes

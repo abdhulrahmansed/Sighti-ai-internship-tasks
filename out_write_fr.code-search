@@ -1,0 +1,28 @@
+# Query: out.write(fr
+# ContextLines: 1
+
+ "janburger": {
+
+        "entry_zone": np.array([
+            [25, 504],    # Top-left (past the service window)
+           [1040, 504],   # Top-right
+           [1040, 706],   # Bottom-right (driveway exit threshold)
+           [25, 706]     # Bottom-left
+        ], dtype=np.int32),
+
+        "service_zone": np.array([
+           [60, 240],    # Top-left (along left wall)
+           [1040, 340],   # Top-right (toward lane divider)
+           [1040, 720],   # Bottom-right
+           [40, 710]     # Bottom-left (foreground exit threshold)
+        ], dtype=np.int32),
+
+        "exit_zone": np.array([
+           [25, 204],    # Top-left (past the service window)
+           [640, 204],   # Top-right
+           [768, 406],   # Bottom-right (driveway exit threshold)
+           [25, 406]     # Bottom-left
+        ], dtype=np.int32),
+
+        
+    },
